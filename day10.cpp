@@ -37,17 +37,36 @@ using namespace std;
 //     return 0;
 // }
 
-int sump(int x) 
-{
-    if (x == 0)
-    {
-        return 0;
-    }
-    return x + sump(x - 1);
-}
-int main()
-{
-    int x;
-    cin >> x;
-    cout<<sump(x);
-}
+// int sump(int x)
+// {
+//     if (x == 0)
+//     {
+//         return 0;
+//     }
+//     return x + sump(x - 1);
+// }
+// int main()
+// {
+//     int x;
+//     cin >> x;
+//     cout<<sump(x);
+// }
+
+// int fibonacci(int y, int sum, int prev, int tempp)
+// {
+//     if (y > 0)
+//     {
+//         cout<<prev;
+// tempp = sum + prev;
+// prev = sum;
+// sum = tempp;
+//         return fibonacci (y-1, sum, prev, tempp);
+//     }
+//     return 1;
+// }
+// int main()
+// {
+//     int x, sum = 1, prev=0, tempp=0;
+//     cin >> x;
+//      fibonacci(x,  sum, prev, tempp);
+// }
