@@ -59,18 +59,18 @@ using namespace std;
 //     return 0;
 // }
 
-int power(int x, int y, int answer)
-{
-    if (y < 1)
-    {
-        return answer;
-    }
-    answer *= x;
-    return power(x, y - 1, answer);
-}
-int main()
-    {int x, y, answer = 1;
-     cout << "enter a number and its power";
-     cin >> x >> y;
-    cout<< power(x, y, answer);
-    }
+// int power(int x, int y, int answer)
+// {
+//     if (y < 1)
+//     {
+//         return answer;
+//     }
+//     answer *= x;
+//     return power(x, y - 1, answer);
+// }
+// int main()
+//     {int x, y, answer = 1;
+//      cout << "enter a number and its power";
+//      cin >> x >> y;
+//     cout<< power(x, y, answer);
+//     }
