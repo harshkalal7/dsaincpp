@@ -75,12 +75,12 @@ using namespace std;
 //     {
 //         for (j = 5; j >= 1; j--)
 //         {
-//            if ( j>= i){
-//             cout<<"*";
-//            }
-//             else {
-//                 cout<<" ";
-//             }
+        //    if ( j>= i){
+        //     cout<<"*";
+        //    }
+        //     else {
+        //         cout<<" ";
+        //     }
 //         }
 //         cout << endl;
 //     }
@@ -98,22 +98,34 @@ using namespace std;
 //     }
 // }
 
-int main()
-{
-    int n = 10;
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 1; j <= n - i; j++)
-        {
-            if (i == 0 || j == 1 || (j == n - i))
-            {
-                cout << " * ";
-            }
-            else
-            {
-                cout << "   ";
-            }
-        }
-        cout << endl;
-    }
-}
+// int main()
+// {
+//     int n = 10;
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 1; j <= n - i; j++)
+//         {
+//             if (i == 0 || j == 1 || (j == n - i))
+//             {
+//                 cout << " * ";
+//             }
+//             else
+//             {
+//                 cout << "   ";
+//             }
+//         }
+//         cout << endl;
+//     }
+// }
+
+// int main()
+// {
+//     int i, j;
+//     for (i = 1; i < 5; i++){
+//         for (j = 1; j < 5; j++)
+//         {
+//           cout << "*";    
+//         }          
+//         cout<<endl;
+//     }
+// }
