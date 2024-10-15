@@ -10,7 +10,6 @@ int main()
     //     cout << x << "*" << y << "=" << x * y << endl;
     //     y++;
     // } while (y <= 10);
-
     // float sum=0;
     // int arr[] = {2, 2, 2, 5, 24};
     // for (int i = 0; i < sizeof(arr)/sizeof(arr[0]); i++)
