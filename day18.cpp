@@ -93,7 +93,20 @@ void search (Node *&head, int age){
     while(temp->data != age){
        temp =temp->next;
     }
-    cout<<temp<<endl<<temp->data `;
+    cout<<temp<<endl<<temp->data ;
+}
+
+void search2 (Node *&head, int num){
+    if (head == nullptr)
+    {
+        return;
+    }
+    Node *temp = head;
+    while(num != 1){
+       temp =temp->next;
+       num--;
+    }
+    cout<<temp->data ;
 }
 int main()
 {
@@ -104,7 +117,7 @@ int main()
     insertAtEnd(head, 3);
     insertAtEnd(head, 42);
     // deleteatspecificpoint(head);
-    search(head, 3);
+    search2(head, 2);
     // printList(head);
     return 0;
 }
