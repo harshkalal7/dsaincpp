@@ -38,24 +38,59 @@
 
 #include <iostream>
 using namespace std;
-class student
-{
-    int roll_no;
 
+class Person
+{
 public:
-    void setRollNo(int r)
+    string name;
+    int age;
+    Person(int a, string n)
+    {
+        this->age = a;
+        this->name = n;
+    }
+     void pprint()
+    {
+        cout  << age << name << endl;
+    }
+};
+class Student : public Person
+{
+public:
+    int roll_no;
+    Student(int r, int a, string n) : Person(a, n)
     {
         this->roll_no = r;
     }
-    void pRollNo()
+    void sprint()
     {
-        cout << this->roll_no;
+        cout << roll_no << age << name << endl;
+    }
+};
+
+class Class12 : public Student
+{
+public:
+    string branch;
+    Class12(string b, int r, int a, string n) : Student(r, a, n)
+    {
+        this->branch = b;
+    }
+    void cprint()
+    {
+        cout << branch << roll_no << age << name << endl;
     }
 };
 int main()
 {
-    student s1;
-    s1.setRollNo(123);
-    s1.pRollNo();
+    // Class12 stu;
+    // stu.name = "harsh";
+    // stu.age = 20;
+    // stu.branch = "cs";
+    // stu.roll_no = 123;
+    Class12 stu("cs", 123, 20, "harsh");
+    stu.cprint();
+    stu.sprint();
+    stu.pprint();
     return 0;
 }
